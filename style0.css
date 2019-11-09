@@ -146,16 +146,6 @@ text-decoration: none;!important
   overflow: auto;
 }
 
-    #home img{
-
-    position: fixed;
-    height: 5vw;
-    top: 2.5vw;
-    left: 2.5vw;
-    }
-
-
-
 .active {
   font-family: "DIN Medium";
 }
@@ -308,80 +298,63 @@ text-decoration: none;!important
 }
 
 
-@media only screen and (width: 320px) and (height: 480px) and (-webkit-device-pixel-ratio: 2) { 
+@media only screen and (max-width: 600px){ 
 
-.nav {
-    left: 83vw;
-    top: 3vh;
-    font-weight:bold;
-    transform: rotate(00deg);
-    font-size: 1em;
-    text-decoration: none!important;
-    padding:5px;
-    background: rgba(256,256,256,.9);
-}
-     #sidebar {
-    font-size: 1.2em;
-    height:20vh;
-    min-height:150px;
-    width: 100%;
-    margin-bottom: 10vh;
-    background: #FFFFFF;
-             z-index: 0;
+  .nav {
+      display:none;
+  }
+
+  #sidebar {
+    position:absolute;
+    height:12vh;
+    width:100%;
+    left: 0;
   }
 
   #header-image {
-    display: inline block;
-    position: absolute;
-    top:20%;
-    left: 5%;
-    height: 80%;
-      
-}
-    div#home img {
-        display: block;
-        position: unset;
-        overflow: hidden;
-        min-height: 130px;
-        margin-left: 10vw;
-        margin-top: 10vw;
-    }
-    
-    .body {
-        display: block;
-        margin: 12vw;
-        width: 76vw;
-        
-        
-    }
+    position:absolute;
+    height:83%;
+    width:8.3vh;
+    margin-bottom:0px;
+    top:2vh;
+    right:2vh;
+  }
+
   #header-image img{
-    display: block;
-    position: relative;
-    height: 100%;
-    min-height:110px;
-    left:0px;
-}
+    height:100%;
+    min-height:0px;
+    top:none;
+    bottom:none;
+    left:0vh;
+  }
+    
+  .body {
+      display: block;
+      margin: 12vw;
+      width: 76vw;       
+  }
 
   #intro {
     display: inline block;
     position: absolute;
-      font-size: .75em;
-
-
+    font-size: .8em;
     overflow: auto;
-    min-height: 130px;
-    margin-left: 20vh;
+    height:30vh;
+    min-height:50px;
+    padding-top:0px;
+    margin-top: 8vh;
+    margin-left: 3vh;
     margin-right: 3vh;
-    margin-top: 3vh;
     z-index: 10;
-    max-height:35vh;
 }
 
   .swiper-container {
     display:block;
     position:absolute;
     width: 100%;
-    height: 65vh!important;
+    height: 54vh;
+    margin-top:2vh;
+    padding-bottom:2em;
     bottom:0;
     z-index: 1;
           -webkit-safari-bottom:0!important;
@@ -392,550 +365,183 @@ text-decoration: none;!important
     min-height: 300px;
     width: 28vh;
     min-width: 150px;
-    margin: 2vh;
+    margin:2vh;
   }
-    .arrows-container {
+
+  .caption {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: -2em;;
+  }
+    
+  .arrows-container {
     display: none;
-}
+  }
 }
 
-/* iPhone 5/SE */
-@media only screen and (width: 320px) and (height: 568px) and (-webkit-device-pixel-ratio: 2) { 
-.nav {
-    left: 83vw;
-    top: 3vh;
-    font-weight:bold;
-    transform: rotate(00deg);
-    font-size: 1em;
-    padding:5px;
-    background: rgba(256,256,256,.9);
-}
-     #sidebar {
-    font-size: 1.2em;
-    height:20vh;
-    min-height:150px;
-    width: 100%;
-    margin-bottom: 10vh;
-    background: #FFFFFF;
-             z-index: 0;
+@media only screen and (min-width: 600px) and (max-width: 1024px){ 
+
+  .nav {
+      display:none;
+  }
+
+  #sidebar {
+    position:absolute;
+    height:12vh;
+    width:100%;
+    left: 0;
   }
 
   #header-image {
-    display: inline block;
-    position: absolute;
-    top:20%;
-    left: 5%;
-    height: 80%;
-      
-}
-    div#home img {
-        display: block;
-        position: unset;
-        overflow: hidden;
-        min-height: 130px;
-        margin-left: 10vw;
-        margin-top: 10vw;
-    }
-    
-    .body {
-        display: block;
-        margin: 12vw;
-        width: 76vw;
-        
-        
-    }
+    position:absolute;
+    height:83%;
+    width:8.3vh;
+    margin-bottom:0px;
+    top:2vh;
+    right:2vh;
+  }
+
   #header-image img{
-    display: block;
-    position: relative;
-    height: 100%;
-    min-height:110px;
-    left:0px;
-}
+    height:100%;
+    min-height:0px;
+    top:none;
+    bottom:none;
+    left:0vh;
+  }
+    
+  .body {
+      display: block;
+      margin: 12vw;
+      width: 76vw;       
+  }
 
   #intro {
     display: inline block;
     position: absolute;
-      font-size: .75em;
-
-
+    font-size: 1.1em;
     overflow: auto;
-    min-height: 130px;
-    margin-left: 20vh;
+    height:25vh;
+    min-height:50px;
+    padding-top:0px;
+    margin-top: 8vh;
+    margin-left: 3vh;
     margin-right: 3vh;
-      margin-top: 3vh;
-      z-index: 10;
-      max-height:30vh;
+    z-index: 10;
 }
 
   .swiper-container {
     display:block;
     position:absolute;
     width: 100%;
-    height: 70vh!important;
+    height: 63vh;
+    margin-top:2vh;
+    padding-bottom:2em;
     bottom:0;
     z-index: 1;
           -webkit-safari-bottom:0!important;
 }
 
   .swiper-slide {
-    height: 40vh;
+    height: 55vh;
     min-height: 300px;
     width: 28vh;
     min-width: 150px;
-    margin: 2vh;
+    margin:2vh;
   }
-    .arrows-container {
+
+  .caption {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: -2em;
+  font-size:1.1em;
+  }
+    
+  .arrows-container {
     display: none;
-}
+  }
 }
 
-@media only screen and (width: 375px) and (height: 667px) and (-webkit-device-pixel-ratio: 2) { 
-.nav {
-    left: 83vw;
-    top: 3vh;
-    font-weight:bold;
-    transform: rotate(00deg);
-    font-size: 1em;
-    padding:5px;
-    background: rgba(256,256,256,.9);
-}
-     #sidebar {
-    font-size: 1.2em;
-    height:20vh;
-    min-height:150px;
-    width: 100%;
-    margin-bottom: 10vh;
-    background: #FFFFFF;
-             z-index: 0;
+@media only screen and (min-width: 1024px) and (max-width: 1366px){ 
+
+  .nav {
+      display:none;
+  }
+
+  #sidebar {
+    position:absolute;
+    height:12vh;
+    width:100%;
+    left: 0;
   }
 
   #header-image {
-    display: inline block;
-    position: absolute;
-    top:20%;
-    left: 5%;
-    height: 80%;
-      
-}
-    div#home img {
-        display: block;
-        position: unset;
-        overflow: hidden;
-        min-height: 130px;
-        margin-left: 10vw;
-        margin-top: 10vw;
-    }
-    
-    .body {
-        display: block;
-        margin: 12vw;
-        width: 76vw;
-        
-        
-    }
+    position:absolute;
+    height:83%;
+    width:8.3vh;
+    margin-bottom:0px;
+    top:2vh;
+    right:2vh;
+  }
+
   #header-image img{
-    display: block;
-    position: relative;
-    height: 100%;
-    min-height:110px;
-    left:0px;
-}
+    height:100%;
+    min-height:0px;
+    top:none;
+    bottom:none;
+    left:0vh;
+  }
+    
+  .body {
+      display: block;
+      margin: 12vw;
+      width: 76vw;       
+  }
 
   #intro {
     display: inline block;
     position: absolute;
-      font-size: .75em;
-
-
+    font-size: 1.6em;
     overflow: auto;
-    min-height: 130px;
-    margin-left: 20vh;
+    height:27vh;
+    min-height:50px;
+    padding-top:0px;
+    margin-top: 8vh;
+    margin-left: 3vh;
     margin-right: 3vh;
-      margin-top: 3vh;
-      z-index: 10;
-      max-height:35vh;
+    z-index: 10;
 }
 
   .swiper-container {
     display:block;
     position:absolute;
     width: 100%;
-    height: 65vh!important;
+    height: 63vh;
+    margin-top:2vh;
+    padding-bottom:2em;
     bottom:0;
     z-index: 1;
           -webkit-safari-bottom:0!important;
 }
 
   .swiper-slide {
-    height: 40vh;
+    height: 52vh;
     min-height: 300px;
     width: 28vh;
     min-width: 150px;
-    margin: 2vh;
-  }
-    .arrows-container {
-    display: none;
-}
-}
-
-/* iPhone 6/7/8 */
-@media only screen and (width: 375px) and (height: 667px) and (-webkit-device-pixel-ratio: 2) { 
-
-.nav {
-    left: 83vw;
-    top: 3vh;
-    font-weight:bold;
-    transform: rotate(00deg);
-    font-size: 1em;
-    padding:5px;
-    background: rgba(256,256,256,.9);
-}
-     #sidebar {
-    font-size: 1.2em;
-    height:20vh;
-    min-height:150px;
-    width: 100%;
-    margin-bottom: 10vh;
-    background: #FFFFFF;
-             z-index: 0;
+    margin:2vh;
   }
 
-  #header-image {
-    display: inline block;
-    position: absolute;
-    top:20%;
-    left: 5%;
-    height: 80%;
-      
-}
-    div#home img {
-        display: block;
-        position: unset;
-        overflow: hidden;
-        min-height: 130px;
-        margin-left: 10vw;
-        margin-top: 10vw;
-    }
+  .caption {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: -2em;
+  font-size:1.6em;
+  }
     
-    .body {
-        display: block;
-        margin: 12vw;
-        width: 76vw;
-        
-        
-    }
-  #header-image img{
-    display: block;
-    position: relative;
-    height: 100%;
-    min-height:110px;
-    left:0px;
-}
-
-  #intro {
-    display: inline block;
-    position: absolute;
-      font-size: .75em;
-
-
-    overflow: auto;
-    min-height: 130px;
-    margin-left: 20vh;
-    margin-right: 3vh;
-      margin-top: 3vh;
-      z-index: 10;
-      max-height:35vh;
-}
-
-  .swiper-container {
-    display:block;
-    position:absolute;
-    width: 100%;
-    height: 65vh!important;
-    bottom:0;
-    z-index: 1;
-          -webkit-safari-bottom:0!important;
-}
-
-  .swiper-slide {
-    height: 40vh;
-    min-height: 300px;
-    width: 28vh;
-    min-width: 150px;
-    margin: 2vh;
-  }
-    .arrows-container {
+  .arrows-container {
     display: none;
-}
-}
-
-/* iPhone 6/7/8 Plus */
-@media only screen and (width: 414px) and (height: 736px) and (-webkit-device-pixel-ratio: 3) { 
-.nav {
-    left: 83vw;
-    top: 3vh;
-    font-weight:bold;
-    transform: rotate(00deg);
-    font-size: 1em;
-    padding:5px;
-    background: rgba(256,256,256,.9);
-}
-     #sidebar {
-    font-size: 1.2em;
-    height:20vh;
-    min-height:150px;
-    width: 100%;
-    margin-bottom: 10vh;
-    background: #FFFFFF;
-             z-index: 0;
   }
-
-  #header-image {
-    display: inline block;
-    position: absolute;
-    top:20%;
-    left: 5%;
-    height: 80%;
-      
 }
-    div #home img {
-        display: block;
-        position: unset;
-        overflow: hidden;
-        min-height: 130px;
-        margin-left: 10vw;
-        margin-top: 10vw;
-    }
-    
-    .body {
-        display: block;
-        margin: 12vw;
-        width: 76vw;
-        
-        
-    }
-  #header-image img{
-    display: block;
-    position: relative;
-    height: 100%;
-    min-height:110px;
-    left:0px;
-}
-
-  #intro {
-    display: inline block;
-    position: absolute;
-      font-size: .75em;
-
-
-    overflow: auto;
-    min-height: 130px;
-    margin-left: 20vh;
-    margin-right: 3vh;
-      margin-top: 3vh;
-      z-index: 10;
-      max-height:40vh;
-}
-
-  .swiper-container {
-    display:block;
-    position:absolute;
-    width: 100%;
-    height: 60vh!important;
-    bottom:0!important;
-    z-index: 1;
-          -webkit-safari-bottom:0!important;
-}
-
-  .swiper-slide {
-    height: 40vh;
-    min-height: 300px;
-    width: 28vh;
-    min-width: 150px;
-    margin: 2vh;
-  }
-    .arrows-container {
-    display: none;
-}
-}
-
-/* iPhone X */
-@media only screen and (width: 375px) and (height: 812px) and (-webkit-device-pixel-ratio: 3) { 
-.nav {
-    left: 83vw;
-    top: 3vh;
-    font-weight:bold;
-    transform: rotate(00deg);
-    font-size: 1em;
-    padding:5px;
-    background: rgba(256,256,256,.9);
-}
-     #sidebar {
-    font-size: 1.2em;
-    height:20vh;
-    min-height:150px;
-    width: 100%;
-    margin-bottom: 10vh;
-    background: #FFFFFF;
-             z-index: 0;
-  }
-
-  #header-image {
-    display: inline block;
-    position: absolute;
-    top:20%;
-    left: 5%;
-    height: 80%;
-      
-}
-    div#home img {
-        display: block;
-        position: unset;
-        overflow: hidden;
-        min-height: 130px;
-        margin-left: 10vw;
-        margin-top: 10vw;
-    }
-    
-    .body {
-        display: block;
-        margin: 12vw;
-        width: 76vw;
-        
-        
-    }
-  #header-image img{
-    display: block;
-    position: relative;
-    height: 100%;
-    min-height:110px;
-    left:0px;
-}
-
-  #intro {
-    display: inline block;
-    position: absolute;
-      font-size: .75em;
-
-
-    overflow: auto;
-    min-height: 130px;
-    margin-left: 20vh;
-    margin-right: 3vh;
-      margin-top: 3vh;
-      z-index: 10;
-      max-height:35vh;
-}
-
-  .swiper-container {
-    display:block;
-    position:absolute;
-    width: 100%;
-    height: 65vh;
-    -webkit-safari-bottom:0!important;
-    bottom:0!important;
-    z-index: 1;
-}
-
-  .swiper-slide {
-    height: 48vh;
-    min-height: 300px;
-    width: 28vh;
-    min-width: 150px;
-    margin: 2vh;
-  }
-    .arrows-container {
-    display: none;
-}
-}
-
-/* iPhone X */
-@media only screen and (width: 1125px) and (height: 2436px) and (-webkit-device-pixel-ratio: 3) { 
-.nav {
-    left: 83vw;
-    top: 3vh;
-    font-weight:bold;
-    transform: rotate(00deg);
-    font-size: 1em;
-    padding:5px;
-    background: rgba(256,256,256,.9);
-}
-     #sidebar {
-    font-size: 1.2em;
-    height:20vh;
-    min-height:150px;
-    width: 100%;
-    margin-bottom: 10vh;
-    background: #FFFFFF;
-             z-index: 0;
-  }
-
-  #header-image {
-    display: inline block;
-    position: absolute;
-    top:20%;
-    left: 5%;
-    height: 80%;
-      
-}
-    div#home img {
-        display: block;
-        position: unset;
-        overflow: hidden;
-        min-height: 130px;
-        margin-left: 10vw;
-        margin-top: 10vw;
-    }
-    
-    .body {
-        display: block;
-        margin: 12vw;
-        width: 76vw;
-        
-        
-    }
-  #header-image img{
-    display: block;
-    position: relative;
-    height: 100%;
-    min-height:110px;
-    left:0px;
-}
-
-  #intro {
-    display: inline block;
-    position: absolute;
-      font-size: .75em;
-
-
-    overflow: auto;
-    min-height: 130px;
-    margin-left: 20vh;
-    margin-right: 3vh;
-      margin-top: 3vh;
-      z-index: 10;
-      max-height:35vh;
-}
-
-  .swiper-container {
-    display:block;
-    position:absolute;
-    width: 100%;
-    height: 65vh;
-    -webkit-safari-bottom:0!important;
-    bottom:0!important;
-    z-index: 1;
-}
-
-  .swiper-slide {
-    height: 48vh;
-    min-height: 300px;
-    width: 28vh;
-    min-width: 150px;
-    margin: 2vh;
-  }
-    .arrows-container {
-    display: none;
-}
-}
-
