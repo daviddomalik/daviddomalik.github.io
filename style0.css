@@ -546,7 +546,7 @@ text-decoration: none;!important
   }
 }
 
-@media only screen and (width: 1125px) and (height: 2436px){ 
+@media only screen and (min-width: 1366px){ 
 
   .nav {
       display:none;
